@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skateboarding Hobby</title>
+
+<link rel="icon" href="favicon.ico">
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#1a1a2e;
+color:#eaeaea;
+margin:0;
+}
+
+header{
+background:#16213e;
+padding:20px;
+text-align:center;
+}
+
+h1{
+color:#f9c74f;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+color:#4cc9f0;
+text-decoration:none;
+font-weight:bold;
+margin:0 10px;
+}
+
+nav a:hover{
+color:#f72585;
+}
+
+main{
+padding:30px;
+max-width:900px;
+margin:auto;
+}
+
+section{
+display:none;
+}
+
+section.active{
+display:block;
+}
+
+img{
+width:400px;
+border-radius:10px;
+}
+
+figure{
+text-align:center;
+}
+
+footer{
+background:#16213e;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+footer a{
+color:#4cc9f0;
+}
+
+</style>
+
+<script>
+
+function showSection(id){
+
+let sections=document.querySelectorAll("section");
+
+sections.forEach(function(sec){
+sec.classList.remove("active");
+});
+
+document.getElementById(id).classList.add("active");
+
+}
+
+window.onload=function(){
+showSection("what");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Skateboarding</h1>
+
+<nav>
+
+<a href="#" onclick="showSection('what')">What</a> ⚡
+<a href="#" onclick="showSection('who')">Who</a> ⚡
+<a href="#" onclick="showSection('when')">When</a> ⚡
+<a href="#" onclick="showSection('where')">Where</a> ⚡
+<a href="#" onclick="showSection('how')">How</a> ⚡
+<a href="#" onclick="showSection('why')">Why</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<section id="what">
+
+<h2>What is Skateboarding</h2>
+
+<p>
+Skateboarding is a sport and lifestyle where riders perform tricks or cruise using a board with four wheels.
+</p>
+
+<p>
+It combines creativity, balance, and persistence. Many people skate for fun, transportation, or competition.
+</p>
+
+<figure>
+<img src="images/skate1.jpg" alt="Skateboard trick">
+<figcaption>Skateboard trick in a skatepark</figcaption>
+</figure>
+
+</section>
+
+
+
+<section id="who">
+
+<h2>Who Skateboards</h2>
+
+<p>
+People of all ages skateboard. Many start young but continue skating into adulthood.
+</p>
+
+<p>
+Communities often form around skateparks and local skate shops.
+</p>
+
+<figure>
+<img src="images/skate2.jpg" alt="Group of skaters">
+<figcaption>Group of skaters practicing together</figcaption>
+</figure>
+
+</section>
+
+
+
+<section id="when">
+
+<h2>Best Times to Skate</h2>
+
+<p>
+Most skateboarders prefer skating in the evening or early morning when temperatures are cooler.
+</p>
+
+<p>
+Fall and spring are often considered the best seasons for skating.
+</p>
+
+<figure>
+<img src="images/skate3.jpg" alt="Sunset skating">
+<figcaption>Sunset skate session</figcaption>
+</figure>
+
+</section>
+
+
+
+<section id="where">
+
+<h2>Best Places to Skate</h2>
+
+<p>
+Skateparks provide ramps and rails designed specifically for skating.
+</p>
+
+<p>
+Street skating uses urban obstacles like stairs, rails, and ledges.
+</p>
+
+<figure>
+<img src="images/skate4.jpg" alt="Skatepark">
+<figcaption>Outdoor skatepark</figcaption>
+</figure>
+
+</section>
+
+
+
+<section id="how">
+
+<h2>How to Start Skateboarding</h2>
+
+<p>
+Beginners should first learn balance and pushing techniques.
+</p>
+
+<p>
+Start with simple riding before attempting tricks.
+</p>
+
+<figure>
+<img src="images/skate5.jpg" alt="Learning skateboarding">
+<figcaption>Beginner learning balance</figcaption>
+</figure>
+
+</section>
+
+
+
+<section id="why">
+
+<h2>Why People Love Skateboarding</h2>
+
+<p>
+Skateboarding offers freedom and creativity.
+</p>
+
+<p>
+Every obstacle becomes an opportunity for a new trick and personal style.
+</p>
+
+<figure>
+<img src="images/skate6.jpg" alt="Skater jump">
+<figcaption>Skater jumping a stair set</figcaption>
+</figure>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>Designed by Kelly Garcia</p>
+
+<a href="https://validator.w3.org/">HTML Validator</a> |
+<a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> |
+<a href="https://wave.webaim.org/">Accessibility Check</a>
+
+</footer>
+
+</body>
+</html>
