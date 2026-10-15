@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garcia Web Solutions | Home</title>
+    <link rel="icon" href="../../images/faviconwave.ico">
+
+    <style>
+        /*
+            Five-color palette (for future reference):
+            https://coolors.co/0b132b-1c2541-3a506b-5bc0be-6fffe9
+
+            #0b132b: page background
+            #1c2541: content background
+            #3a506b: borders
+            #5bc0be: accents
+            #6fffe9: text and links
+        */
+
+        body {
+            background-color: #0b132b;
+            color: #6fffe9;
+            font-family: "Trebuchet MS", sans-serif;
+            max-width: 960px;
+            margin: auto;
+            padding: 40px 24px;
+            line-height: 1.7;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 28px;
+            border-bottom: 3px solid #5bc0be;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, serif;
+            line-height: 1.2;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(28px, 5vw, 44px);
+        }
+
+        header strong {
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            background-color: #5bc0be;
+            color: #0b132b;
+            border-radius: 18px;
+            font-family: monospace;
+            font-size: 32px;
+        }
+
+        main {
+            background-color: #1c2541;
+            margin: 32px 0;
+            padding: 32px;
+            border: 1px solid #3a506b;
+            border-radius: 16px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        li::marker {
+            color: #5bc0be;
+        }
+
+        section {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 2px solid #3a506b;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        address p {
+            margin: 12px 0;
+        }
+
+        a,
+        a:visited {
+            color: #6fffe9;
+            text-underline-offset: 4px;
+        }
+
+        a:hover,
+        a:focus-visible {
+            color: #5bc0be;
+        }
+
+        footer {
+            padding-top: 20px;
+            border-top: 1px solid #3a506b;
+            font-size: 15px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            header {
+                gap: 12px;
+            }
+
+            header strong {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+
+            main {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Garcia Web Solutions</h1>
+        <strong role="img" aria-label="Garcia Web Solutions code-symbol logo">&lt;/&gt;</strong>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+
+        <p><em>Creating the website for you</em></p>
+
+        <p>
+            Garcia Web Solutions is a web design and development firm
+            founded by Kelly Garcia. We help small businesses, independent
+            professionals, and community organizations build a welcoming
+            online presence through clear layouts, accessible content,
+            and responsive websites.
+        </p>
+
+        <section>
+            <h3>Why Choose Garcia Web Solutions?</h3>
+
+            <ul>
+                <li>Custom designs that reflect your brand's personality.</li>
+                <li>Responsive layouts for phones, tablets' and computers.</li>
+                <li>Accessible navigation that helps visitors find their way.</li>
+                <li>Clear communication throughout the design process.</li>
+                <li>Organized code that makes future updates easier.</li>
+                <li>Focused pages that put your most useful information first.</li>
+                <li>Careful attention to typography, spacing, and contrast.</li>
+                <li>Personal support for businesses building their first website ever.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>What We Can Do for You</h3>
+
+            <p>
+                We can create a business website, develop a personal
+                portfolio, refresh an existing layout, or build a landing
+                page for your next project. We work with you to organize
+                your content, establish a consistent visual style, and
+                create a website that supports your goals.
+            </p>
+        </section>
+
+        <section>
+            <h3>Contact Us</h3>
+
+            <p>
+                Have a project in mind? Let's discuss your ideas.
+                Use the following contact details to begin!
+            </p>
+
+            <address>
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:+17044206767">(704) 420-6767</a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:hello@garciawebsolutions.cpm">
+                        hello@garciawebsolutions.com</a>
+                </p>
+
+                <p>
+                    <strong>Address:</strong><br>
+                    123 Example Avenue, Suite 200<br>
+                    Charlotte, NC 28213
+                </p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>Page created by Garcia Web Solutions ©2026 | Certified in Responsive Web Design</p>
+        <p><em>Creating the website for you</em></p>
+    </footer>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+</body>
+</html>
