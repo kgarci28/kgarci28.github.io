@@ -27,7 +27,7 @@
     h1 {
         margin: 0 0 18px;
         color: #284d6b;
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 6vw, 2.5rem);
     }
 
     nav {
@@ -78,7 +78,7 @@
         box-shadow: 0 6px 18px rgba(48, 77, 99, 0.08);
     }
 
-    section.active {
+    .active {
         display: block;
     }
 
@@ -105,7 +105,7 @@
         display: block;
         width: 100%;
         height: auto;
-        border: 1px solid #b5d2e8;
+        outline: 1px solid #b5d2e8;
         border-radius: 12px;
     }
 
@@ -153,10 +153,6 @@
     @media (max-width: 600px) {
         header {
             padding: 24px 12px;
-        }
-
-        h1 {
-            font-size: 2rem;
         }
 
         nav a {
