@@ -3,87 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title>Baking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
 <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #fdecef;
-        color: #4a2e2e;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #eaf4fc;
+        color: #304d63;
         margin: 0;
         padding: 0;
+        line-height: 1.6;
     }
 
-    header, footer {
-        background-color: #d47a8c;
-        color: white;
-        padding: 15px;
+    header {
+        background-color: #c5dff3;
+        padding: 28px 20px;
         text-align: center;
+        border-bottom: 3px solid #8db8da;
+    }
+
+    h1 {
+        margin: 0 0 18px;
+        color: #284d6b;
+        font-size: 2.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
     }
 
     nav a {
-        margin: 0 10px;
-        color: white;
+        display: inline-block;
+        padding: 8px 12px;
+        color: #284d6b;
         text-decoration: none;
         font-weight: bold;
+        border-radius: 8px;
     }
 
-    nav a:hover {
-        color: #ffd4e1;
+    nav a:hover,
+    nav a:focus-visible {
+        background-color: #ffffff;
+        color: #234760;
+    }
+
+    a:focus-visible {
+        outline: 3px solid #365f80;
+        outline-offset: 4px;
+    }
+
+    .divider {
+        margin: 0 3px;
+        color: #446b89;
     }
 
     main {
-        padding: 20px;
+        width: 90%;
+        max-width: 900px;
+        margin: 32px auto;
     }
 
     section {
         display: none;
-    }
-    
-    section p {
-    max-width: 600px;
-    margin: 0 auto 15px auto;
-    text-align: left;
-    line-height: 1.6;
+        background-color: #ffffff;
+        padding: 32px;
+        border: 1px solid #b5d2e8;
+        border-radius: 16px;
+        box-shadow: 0 6px 18px rgba(48, 77, 99, 0.08);
     }
 
-
-    .active {
+    section.active {
         display: block;
     }
 
-    h1 {
-        margin-top: 0;
+    h2 {
+        color: #365f80;
         text-align: center;
+        margin: 0 0 24px;
+        font-size: 1.8rem;
     }
 
-    h2 {
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 20px;
+    section p {
+        max-width: 650px;
+        margin: 0 auto 18px;
+        text-align: left;
     }
 
     figure {
-        max-width: 400px;
-        margin: 15px auto;
+        max-width: 480px;
+        margin: 28px auto 16px;
         text-align: center;
     }
 
     figure img {
+        display: block;
         width: 100%;
         height: auto;
-        border-radius: 6px;
+        border: 1px solid #b5d2e8;
+        border-radius: 12px;
     }
 
     figcaption {
+        color: #365f80;
         font-weight: bold;
-        margin-top: 5px;
+        margin-top: 12px;
     }
 
-    .divider {
-        margin: 0 8px;
-        color: #ffe3ea;
+    figure + p {
+        max-width: 480px;
+        color: #526b7d;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        background-color: #c5dff3;
+        color: #304d63;
+        padding: 24px 20px;
+        text-align: center;
+        border-top: 3px solid #8db8da;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+
+    footer a {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #284d6b;
+        padding: 8px 12px;
+        margin: 4px;
+        border: 1px solid #8db8da;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer a:hover {
+        background-color: #edf6fd;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            padding: 24px 12px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        nav a {
+            padding: 8px;
+        }
+
+        .divider {
+            margin: 0;
+            font-size: 0.85rem;
+        }
+
+        main {
+            width: 94%;
+            margin: 20px auto;
+        }
+
+        section {
+            padding: 24px 18px;
+        }
     }
 </style>
 
@@ -218,12 +310,17 @@
 
 <footer>
     <p>
-        <a href="https://validator.w3.org/">HTML Validator</a> |
-        <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> |
+        <a href="https://validator.w3.org/">HTML Validator</a>
+        <span aria-hidden="true">◈</span>
+        <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>
+        <span aria-hidden="true">◈</span>
         <a href="https://wave.webaim.org/">Accessibility Checker</a>
     </p>
-    <p><a href="../design_firm.html">My Design Firm</a></p>
+
+    <p>Page built by <a href="garciawebsolutions.com/">Garcia Web Solutions</a> ©2026</p>
+    <p><em>Creating the website for you</em></p>
 </footer>
 
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </body>
 </html>
