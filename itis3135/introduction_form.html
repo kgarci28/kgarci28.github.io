@@ -8,13 +8,12 @@
     <link rel="icon" href="../images/faviconwave.ico">
 
     <style>
-        /* Original introduction page styling */
         body {
-            background-color: #ffffff;
+            background-color: #ffffff; /* White provides a clean background and improves readability. */
             font-family: Arial, sans-serif;
             margin: auto;
             padding: 40px;
-            color: #333;
+            color: #333; 
             max-width: 900px;
         }
 
@@ -32,6 +31,7 @@
 
         h2 {
             text-align: center;
+            font-family: Georgia, serif;
         }
 
         header nav {
@@ -109,7 +109,6 @@
             }
         }
 
-        /* Additional styling for the form */
         fieldset {
             border: 1px solid #ccc;
             margin: 18px 0;
@@ -157,7 +156,7 @@
 
         button {
             background-color: #800020;
-            color: white;
+            color: white; /* White text provides contrast against burgundy buttons. */
             border: none;
             border-radius: 3px;
             padding: 9px 15px;
@@ -202,16 +201,29 @@
                 Introduction Form
             </a> |
             <a href="contract.html">Contract</a> |
-            <a href="about.html">About</a> |
+            <a href="about.html">About</a>
+        </nav>
+        
+        <nav aria-label="Secondary navigation">
             <a href="hobby/">Hobby</a>
         </nav>
+        </header>
     </header>
+<!--
+The div elements organize the introduction form and generated result
+into separate sections so JavaScript can switch between them.
 
+The IDs identify specific form fields, buttons, and containers
+for JavaScript functionality.
+
+The classes group related course fields, footer links, and form
+instructions so they can be styled consistently with CSS.
+-->
     <main>
         <h2>Introduction Form</h2>
 
         <div id="form-screen">
-            <h3>Please submit the form below.</h3>
+            <h3>Please Submit the Form Below.</h3>
             <p class="form-note">
                 Required fields are marked with *.
                 My introduction information is prefilled.
