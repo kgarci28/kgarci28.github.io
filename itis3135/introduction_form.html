@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Garcia's Kind Goldfish | ITIS3135 | Introduction Form</title>
+    <link rel="icon" href="../images/faviconwave.ico">
+
+    <style>
+        /* Original introduction page styling */
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: auto;
+            padding: 40px;
+            color: #333;
+            max-width: 900px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #800020;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        header nav {
+            margin-top: 15px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 40px auto;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        h6 {
+            font-size: clamp(16px, 4vw, 28px);
+            margin: 20px 0;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        a,
+        a:visited {
+            color: #800020;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        figure {
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+            height: auto;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        ol {
+            margin-top: 12px;
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding-left: 20px;
+            border-left: 3px solid #800020;
+        }
+
+        blockquote p {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+        }
+
+        /* Additional styling for the form */
+        fieldset {
+            border: 1px solid #ccc;
+            margin: 18px 0;
+            padding: 18px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #800020;
+        }
+
+        #introduction-form label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 12px 0 4px;
+        }
+
+        #introduction-form input:not([type="file"]),
+        #introduction-form textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 9px;
+            font: inherit;
+            font-size: 16px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+        }
+
+        #introduction-form textarea {
+            min-height: 78px;
+            resize: vertical;
+        }
+
+        #introduction-form input[type="file"] {
+            display: block;
+            max-width: 100%;
+        }
+
+        .course-entry {
+            border-top: 1px solid #ddd;
+            margin-top: 14px;
+            padding-top: 10px;
+        }
+
+        button {
+            background-color: #800020;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 9px 15px;
+            font: inherit;
+            cursor: pointer;
+            margin: 6px 6px 6px 0;
+        }
+
+        button:hover {
+            background-color: #5d0017;
+        }
+
+        .form-note {
+            font-size: 15px;
+        }
+
+        #image-preview {
+            max-width: 240px;
+            margin: 12px 0;
+        }
+
+        #return-link {
+            display: none;
+            text-align: center;
+            margin: 30px auto;
+        }
+    </style>
+
+    <script src="https://lint.page/kit/4d0fe3.js"
+        crossorigin="anonymous"></script>
+    <script src="scripts/introduction.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kelly Garcia's Kind Goldfish | ITIS3135</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="introduction.html">Introduction</a> |
+            <a href="introduction_form.html" aria-current="page">
+                Introduction Form
+            </a> |
+            <a href="contract.html">Contract</a> |
+            <a href="about.html">About</a> |
+            <a href="hobby/">Hobby</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Introduction Form</h2>
+
+        <div id="form-screen">
+            <h3>Please submit the form below.</h3>
+            <p class="form-note">
+                Required fields are marked with *.
+                My introduction information is prefilled.
+            </p>
+
+            <form id="introduction-form">
+
+                <fieldset>
+                    <legend>Name and Mascot</legend>
+
+                    <label for="firstName">First Name *</label>
+                    <input id="firstName" name="firstName"
+                        value="Kelly" placeholder="First Name" required>
+
+                    <label for="middleName">Middle Name (Optional)</label>
+                    <input id="middleName" name="middleName"
+                        value="J." placeholder="Middle Name">
+
+                    <label for="nickname">Preferred Name (Optional)</label>
+                    <input id="nickname" name="nickname"
+                        placeholder="Preferred Name">
+
+                    <label for="lastName">Last Name *</label>
+                    <input id="lastName" name="lastName"
+                        value="Garcia" placeholder="Last Name" required>
+
+                    <label for="adjectives">Mascot Adjective *</label>
+                    <input id="adjectives" name="adjectives"
+                        value="Kind" placeholder="Mascot Adjective" required>
+
+                    <label for="animal">Mascot Animal *</label>
+                    <input id="animal" name="animal"
+                        value="Goldfish" placeholder="Mascot Animal" required>
+
+                    <label for="prettyNameDivider">Name Divider *</label>
+                    <input id="prettyNameDivider" name="prettyNameDivider"
+                        value="|" placeholder="| or ~" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Acknowledgment</legend>
+
+                    <label for="acknowledgment">
+                        Acknowledgment Statement *
+                    </label>
+                    <textarea id="acknowledgment"
+                        name="acknowledgment" required
+                        placeholder="Acknowledgment statement">I understand that this is a public document, and I will not include anything I do not want others to see.</textarea>
+
+                    <label for="acknowledgmentDate">
+                        Acknowledgment Date *
+                    </label>
+                    <input type="date" id="acknowledgmentDate"
+                        name="acknowledgmentDate"
+                        value="2026-11-08" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Picture</legend>
+
+                    <p class="form-note">
+                        The original photograph will be used unless
+                        a replacement image is uploaded.
+                    </p>
+
+                    <label for="img">
+                        Upload a New Picture (Optional)
+                    </label>
+                    <input type="file" id="img" name="img"
+                        accept="image/*">
+
+                    <img id="image-preview"
+                        src="images/KProfile.jpg"
+                        alt="Preview of introduction picture">
+
+                    <label for="pictureAlt">Picture Alt Text *</label>
+                    <input id="pictureAlt" name="pictureAlt"
+                        value="Photo of Kelly Garcia"
+                        placeholder="Describe the image" required>
+
+                    <label for="caption">Picture Caption *</label>
+                    <input id="caption" name="caption"
+                        value="Glenda messing up my hair"
+                        placeholder="Picture Caption" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Introduction and Background</legend>
+
+                    <label for="statement">Personal Statement *</label>
+                    <textarea id="statement" name="statement"
+                        required placeholder="Introduce yourself">Hi, my name is Kelly, and I am a computer science student. My concentration is in Information Technology. I transferred from Central Piedmont Community College after earning my associate degree.</textarea>
+
+                    <label for="personalBackground">
+                        Personal Background *
+                    </label>
+                    <textarea id="personalBackground"
+                        name="personalBackground" required
+                        placeholder="Personal Background">I am 22 years old, and I am a first-generation college student.</textarea>
+
+                    <label for="professionalBackground">
+                        Professional Background *
+                    </label>
+                    <textarea id="professionalBackground"
+                        name="professionalBackground" required
+                        placeholder="Professional Background">I am a notary public.</textarea>
+
+                    <label for="academicBackground">
+                        Academic Background *
+                    </label>
+                    <textarea id="academicBackground"
+                        name="academicBackground" required
+                        placeholder="Academic Background">I am a transfer student from CPCC, where I earned my associate degree.</textarea>
+
+                    <label for="subjectBackground">
+                        Background in This Subject *
+                    </label>
+                    <textarea id="subjectBackground"
+                        name="subjectBackground" required
+                        placeholder="Background in this subject">None.</textarea>
+
+                    <label for="primaryWorkComputer">
+                        Primary Work Computer *
+                    </label>
+                    <textarea id="primaryWorkComputer"
+                        name="primaryWorkComputer" required
+                        placeholder="Primary Work Computer">I use an HP Pavilion x360 laptop running Windows 11.</textarea>
+
+                    <label for="primaryWorkLocation">
+                        Primary Work Location *
+                    </label>
+                    <textarea id="primaryWorkLocation"
+                        name="primaryWorkLocation" required
+                        placeholder="Primary Work Location">I usually do my work on campus or from home, and sometimes at the public library or a cafe.</textarea>
+
+                    <label for="alternateComputerLocation">
+                        Alternate Computer and Location *
+                    </label>
+                    <textarea id="alternateComputerLocation"
+                        name="alternateComputerLocation" required
+                        placeholder="Alternate Computer and Location">I can borrow my brother’s laptop, rent a laptop, or use a computer at the campus library. I can also work at a cafe.</textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Courses</legend>
+
+                    <div id="courses-container"></div>
+
+                    <button type="button" id="add-course">
+                        Add Course
+                    </button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quote and Additional Information</legend>
+
+                    <label for="quote">Quote *</label>
+                    <textarea id="quote" name="quote" required
+                        placeholder="Favorite Quote">“All that we see or seem is but a dream within a dream.”</textarea>
+
+                    <label for="quoteAuthor">Quote Author *</label>
+                    <input id="quoteAuthor" name="quoteAuthor"
+                        value="Edgar Allan Poe"
+                        placeholder="Quote Author" required>
+
+                    <label for="funnyItem">Funny Thing (Optional)</label>
+                    <textarea id="funnyItem" name="funnyItem"
+                        placeholder="A funny fact about yourself"></textarea>
+
+                    <label for="somethingToShare">
+                        Something I Would Like to Share (Optional)
+                    </label>
+                    <textarea id="somethingToShare"
+                        name="somethingToShare"
+                        placeholder="Something to share"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Footer Links</legend>
+                    <div id="footer-links-container"></div>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clear-form">Clear</button>
+            </form>
+        </div>
+
+        <div id="result-screen" hidden></div>
+
+        <p id="return-link">
+            <a href="introduction_form.html" id="start-over">
+                Start Over / Reset Form
+            </a>
+        </p>
+    </main>
+
+    <footer>
+        <nav aria-label="Profile links" id="profile-links">
+            <a href="https://webpages.charlotte.edu/kgarci28/">CLT Web</a> |
+            <a href="https://kgarci28.github.io/">GitHub.io</a> |
+            <a href="https://github.com/kgarci28">GitHub</a> |
+            <a href="https://www.freecodecamp.org/kelgarcia">freeCodeCamp</a> |
+            <a href="https://www.codecademy.com/profiles/kgarci28">Codecademy</a> |
+            <a href="https://www.linkedin.com/in/kelly-j-garcia/">LinkedIn</a>
+        </nav>
+
+        <p>
+            Page built by
+            <a href="garciawebsolutions.com/">Garcia Web Solutions</a>
+            ©2026 | Certified in Responsive Web Design
+        </p>
+        <p><em>Creating the website for you</em></p>
+    </footer>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js"
+        defer></script>
+</body>
+</html>
