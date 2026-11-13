@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Baking</title>
+    <title>Baking | What</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -28,6 +28,7 @@
         margin: 0 0 18px;
         color: #284d6b;
         font-size: clamp(2rem, 6vw, 2.5rem);
+        font-family: Georgia, serif;
     }
 
     nav {
@@ -87,6 +88,7 @@
         text-align: center;
         margin: 0 0 24px;
         font-size: 1.8rem;
+        font-family: Georgia, serif;
     }
 
     section p {
@@ -176,19 +178,29 @@
 </style>
 
 
-    <script>
-        function showSection(id) {
-            const sections = document.querySelectorAll("section");
-            sections.forEach(function(sec) {
-        sec.classList.remove("active");
-        });
-            document.getElementById(id).classList.add("active");
-        }
+    
+<script>
+    function showSection(id) {
+        const sections = document.querySelectorAll("main section");
 
-        window.onload = function() {
-            showSection("what");
-        };
-    </script>
+        sections.forEach(function(section) {
+            section.classList.remove("active");
+        });
+
+        const selectedSection = document.getElementById(id);
+
+        if (selectedSection) {
+            selectedSection.classList.add("active");
+            const heading = selectedSection.querySelector("h2");
+            document.title = "Baking | " + heading.textContent;
+        }
+    }
+
+    window.addEventListener("DOMContentLoaded", function() {
+        showSection("what");
+    });
+</script>
+
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -328,7 +340,7 @@
         <a href="https://wave.webaim.org/">Accessibility Checker</a>
     </p>
 
-    <p>Page built by <a href="itis3135/garciawebsolutions.com/">Garcia Web Solutions</a> ©2026</p>
+    <p>Page built by <a href="../garciawebsolutions.com/">Garcia Web Solutions</a> ©2026</p>
     <p><em>Creating the website for you</em></p>
 </footer>
 
